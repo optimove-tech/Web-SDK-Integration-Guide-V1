@@ -7,7 +7,7 @@ Below you will find the Web SDK technical flows to help you technically understa
 
 ## <a id="basic-flow"></a>BASIC setup technical flow
 
-<p align="center"><img src="https://github.com/optimove-tech/Web-SDK-Integration-Guide/raw/master/Web%20SDK%20Tech%20Flows/web-sdk-tech-flow-basic1.jpg?raw=true"></p>
+<p align="center"><img src="https://github.com/optimove-tech/Web-SDK-Integration-Guide/raw/newImplemetationUpdate/Web%20SDK%20Tech%20Flows/web-sdk-tech-flow-basic1.jpg?raw=true"></p>
 
 > **Definition**: O = Optimove, C = Client
 

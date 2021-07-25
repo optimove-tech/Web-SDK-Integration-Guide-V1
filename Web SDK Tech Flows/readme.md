@@ -14,7 +14,7 @@ Below you will find the Web SDK technical flows to help you technically understa
 <br/>
 
 ### SDK Configuration
-1. Optimove Product Integration team creates the SDK token and web configuration (aka, webconfig) file
+1. Optimove Product Integration team creates the web configuration (aka, webconfig) file
 2. Optimove Product Integration team sends SDK details to client
 
 

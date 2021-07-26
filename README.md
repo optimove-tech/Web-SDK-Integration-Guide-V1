@@ -38,7 +38,7 @@ The following code snippet must be added to every page in your website, either b
 <script src="https://sdk.optimove.net/websdk/?tenant_id={your_tenant_id}"></script>
 ```
 >**Note:** 
-> Remember to replace **your_tenant_id**,with the actual details that you receive from Optimove’s Integration Team.
+> Remember to replace **your_tenant_id** ,with the actual details that you receive from Optimove’s Integration Team.
 
 ### <a id="visitors"></a>Implementation for Visitors (unidentified users)
 

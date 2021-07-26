@@ -33,70 +33,12 @@ Use the basic setup of the Web SDK in order to:
 
 ### <a id="add-code"> </a> Add the Optimove Web SDK script to your website
 
-The following code snippet must be added to every page in your website, either by adding it into the relevant site template files/code or using a website tag manager (such as [Google Tag Manager code snippet](https://github.com/optimove-tech/Web-SDK-Integration-Guide/blob/master/Web-SDK-Basic-Code-Setup/readme.md)). This code will load and initialize the SDK.
+The following code snippet must be added to every page in your website, either by adding it into the relevant site template files/code or using a website tag manager (such as [Google Tag Manager code snippet](https://github.com/optimove-tech/Web-SDK-Integration-Guide/blob/newImplemetationUpdate/Web-SDK-Basic-Code-Setup/readme.md)) This code will load and initialize the SDK.
 ```javascript
-<script>
-// ---------------------------------------
-//These will be your dynamic variables to use for the Optimove SDK
-//optimoveSDKToken = the sdk token provided by Product Integration team
-//optimoveSDKVersion = the sdk version provided by Product Integration team (which also changes upon sdk upgrades)
-//optimoveSDKconfigVersion = the event configuration file version provided by Product Integration team (which also changes upon event modifications)
-// ---------------------------------------
-var optimoveSDKToken = 'your-sdk-token-here'; 
-var optimoveSDKVersion = 'your-sdk-version-here'; 
-var optimoveSDKconfigVersion = 'your-config-version-here'; 
-
-// ---------------------------------------
-// Function: createOptimoveSDK
-// Args: resourceURL, callback
-// creates JS script that is async
-// ---------------------------------------
-function createOptimoveSDK(resourceURL, callback) {
-  
-  console.log('In createOptimoveSDK() '+resourceURL); 
-
-  if (resourceURL != null) {
-    var d = document;
-    var g = d.createElement('script');
-    var s = d.getElementsByTagName('script')[0];
-
-    g.type = 'text/javascript';
-    g.async = true;
-    g.defer = true;
-    g.src = resourceURL;
-    g.onload = callback;
-
-    s.parentNode.insertBefore(g, s);
-  }
-}
-
-// ---------------------------------------
-// Function: initializeOptimoveSDK
-// Args: --
-// initializes optimove SDK with sdk details provided to you by Product Integration team
-// ---------------------------------------
-function initializeOptimoveSDK() {
-  
-  console.log('In initializeOptimoveSDK()');
-
-  optimoveSDK.initialize(optimoveSDKToken, optimoveSDKconfigVersion, loadOptimoveSDKFunctions, 'info');
-}
-
-// ---------------------------------------
-// Function: loadOptimoveSDKFunctions
-// Args: status
-// Use this function to trigger GTM tags that will run Optimove SDK functions
-// ---------------------------------------
-function loadOptimoveSDKFunctions(status) {
-
-  console.log('In loadOptimoveSDKFunctions()  = ' + status);
-}
-
-createOptimoveSDK('https://sdk-cdn.optimove.net/websdk/sdk-v'+optimoveSDKVersion+'.js', initializeOptimoveSDK);
-</script>
+<script src="https://sdk.optimove.net/websdk/?tenant_id={your_tenant_id}"></script>
 ```
 >**Note:** 
-> Remember to replace **optimoveSDKToken**, **optimoveSDKToken** and **optimoveSDKconfigVersion** with the actual details that you receive from Optimove’s Integration Team.
+> Remember to replace **your_tenant_id**,with the actual details that you receive from Optimove’s Integration Team.
 
 ### <a id="visitors"></a>Implementation for Visitors (unidentified users)
 

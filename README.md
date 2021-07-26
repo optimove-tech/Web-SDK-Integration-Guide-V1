@@ -28,7 +28,7 @@
 Use the basic setup of the Web SDK in order to:
 
 -   Implement [Track & Trigger](https://docs.optimove.com/track-and-trigger/)
--   Implement [Google Display Network](https://github.com/optimove-tech/GDN) execution channel
+-   Implement [Google Display Network](https://github.com/optimove-tech/GDN/blob/newImplementation/README.md) execution channel
 
 
 ### <a id="add-code"> </a> Add the Optimove Web SDK script to your website

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Web SDK Setup Guide
  - **Basic Setup**
 	 - [Intro](#basic-setup) 
@@ -390,3 +391,6 @@ addToWishList('my wish list 1', 123456, 'product name', 1.99);
 >  - All monetary values must be reported in the same currency defined in your Optimove instance (e.g., if your instance is based on US dollars, all monetary event values must be reported in dollars). Optimove will not perform currency conversions.
 >  - If your Optimove instance supports multiple languages, all event parameters must use a single default language. This is required in order to maintain a unified set of events.
 >  
+=======
+
+>>>>>>> 9928522106ba7f319d2503e087e659ee820965e6
